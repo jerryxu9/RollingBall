@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static SoundManager instance;
+
+    [SerializeField]
+    private AudioSource soundFX;
+    [SerializeField]
+    private AudioClip landClip, deathClip, iceBreakClip, gameOverClip;
+
+    private void Awake()
     {
-        
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    #region Sounds
+    public void LandSound()
     {
-        
+        soundFX.clip = landClip;
+        soundFX.Play();
     }
+
+    public void IceBreakSound()
+    {
+        soundFX.clip = iceBreakClip;
+        soundFX.Play();
+    }
+
+    public void DeathSound()
+    {
+        soundFX.clip = deathClip;
+        soundFX.Play();
+    }
+
+    public void GameOverSound()
+    {
+        soundFX.clip = gameOverClip;
+        soundFX.Play();
+    }
+    #endregion
 }

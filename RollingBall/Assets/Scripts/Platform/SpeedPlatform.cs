@@ -12,11 +12,11 @@ public class SpeedPlatform : Platform
         {
             if (isLeft)
             {
-                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(-1f);
+                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(-1.5f);
             }
             else
             {
-                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(1f);
+                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(1.5f);
             }
         }
     }

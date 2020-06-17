@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerBounds : MonoBehaviour
 {
+    [SerializeField]
     private float min_X = -2.7f, max_X = 2.7f, min_Y = -5.6f;
     private bool out_of_bounds;
 
@@ -27,8 +28,8 @@ public class PlayerBounds : MonoBehaviour
         if (temp.y <= min_Y && !out_of_bounds)
         {
             out_of_bounds = true;
-            //SoundManager.instance.DearhSound();
-            //GameManager.instance.RestartGame();
+            SoundManager.instance.DeathSound();
+            GameManager.instance.RestartGame();
         }
     }
 
@@ -37,8 +38,8 @@ public class PlayerBounds : MonoBehaviour
         if (target.tag == "Top Spike")
         {
             this.transform.position = new Vector2(1000f, 1000f);
-            //SoundManager.instance.DeathSound();
-            //GameManager.instance.RestartGame();
+            SoundManager.instance.DeathSound();
+            GameManager.instance.RestartGame();
         }
     }
 }

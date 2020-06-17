@@ -9,8 +9,8 @@ public class SpikePlatform : Platform
         if (target.tag == "Player")
         {
             target.transform.position = new Vector2(1000f, 1000f);
-            //SoundManager.instance.GameOverSound();
-            //GameManager.instance.RestartGame();
+            SoundManager.instance.GameOverSound();
+            GameManager.instance.RestartGame();
         }
     }
 }

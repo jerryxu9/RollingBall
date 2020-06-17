@@ -16,12 +16,12 @@ public class BreakablePlatform : Platform
     /// </summary>
     private void BreakableDeactivate()
     {
-        Invoke("DeactivateGameObject", 0.3f);
+        Invoke("DeactivateGameObject", 0.15f);
     }
 
     private void DeactivateGameObject()
     {
-        //SoundManager.instance.IceBreakSound();
+        SoundManager.instance.IceBreakSound();
         gameObject.SetActive(false);
     }
 
@@ -29,7 +29,7 @@ public class BreakablePlatform : Platform
     {
         if (target.gameObject.tag == "Player")
         {
-            //SoundManager.instance.LandSound();
+            SoundManager.instance.LandSound();
             anim.Play("Break");
         }
     }

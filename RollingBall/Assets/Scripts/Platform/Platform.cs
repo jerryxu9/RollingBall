@@ -7,7 +7,7 @@ public class Platform : MonoBehaviour
     public float moveSpeed;
     public float boundY;
 
-    protected void Update()
+    private void Update()
     {
         Move();
     }
@@ -23,7 +23,7 @@ public class Platform : MonoBehaviour
     {
         if (target.gameObject.tag == "Player")
         {
-            //SoundManager.instance.LandSound();
+            SoundManager.instance.LandSound();
         }
     }
 
