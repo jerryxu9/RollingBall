@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6374585560596782763}
   - component: {fileID: 6374585560596782760}
   - component: {fileID: 468821904562384167}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Speed Platform Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,5 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b12a1ce49a99f481884b7db531c295e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 1.7
   boundY: 6

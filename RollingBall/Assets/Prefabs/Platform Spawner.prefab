@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6384934376690370771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6384934376690370770}
+  - component: {fileID: 6384934376690370769}
+  m_Layer: 0
+  m_Name: Platform Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6384934376690370770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6384934376690370771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6384934376690370769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6384934376690370771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbbd3334a7a1645e69124f50a7dd5a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformPrefab: {fileID: 8929479492852041918, guid: 25cec4cfa5d8e4c21a0951b1b3b35ccb,
+    type: 3}
+  spikePlatformPrefab: {fileID: 396393646690843550, guid: ad9494cc4c28f49c78e24a5a22855cbb,
+    type: 3}
+  strechPlatformPrefab: {fileID: 2750932812922150879, guid: 31effa24d715d4a5aaa4b937d43c8b0f,
+    type: 3}
+  movingPlatforms:
+  - {fileID: 3956765909930877056, guid: 480a4fb31b6de4270bd637551e264ddf, type: 3}
+  - {fileID: 6374585560596782761, guid: 174b2f1365d1e40d0ae8750112d76c0b, type: 3}
+  breakablePlatformPrefab: {fileID: 421632535193036546, guid: 8fd0149ef32774c15850d1b33ccf8c5d,
+    type: 3}
+  min_X: -2
+  max_X: 2

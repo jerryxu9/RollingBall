@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class SpikePlatform : Platform
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D target)
     {
-        
+        if (target.tag == "Player")
+        {
+            target.transform.position = new Vector2(1000f, 1000f);
+            //SoundManager.instance.GameOverSound();
+            //GameManager.instance.RestartGame();
+        }
     }
-
-   
 }

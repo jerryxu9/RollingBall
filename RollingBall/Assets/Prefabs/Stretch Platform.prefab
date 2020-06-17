@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1161425862211311015}
   - component: {fileID: 7102322114788535224}
   - component: {fileID: 942910346862853214}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stretch Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,5 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c1ab4838dc4411e9bfcac51c77c6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 1.7
   boundY: 6

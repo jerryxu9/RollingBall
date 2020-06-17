@@ -20,7 +20,7 @@ public class PlatformSpawner : MonoBehaviour
     void Start()
     {
         currentSpawnTimer = spawnTimer;
-
+        // The first two platforms will be the normal platform to allow player to adapt
         GameObject tmp1 = Instantiate(platformPrefab, new Vector3(UnityEngine.Random.Range(min_X, max_X), -5f, 0), Quaternion.identity);
         GameObject tmp2 = Instantiate(platformPrefab, new Vector3(UnityEngine.Random.Range(min_X, max_X), -8f, 0), Quaternion.identity);
         tmp1.transform.SetParent(this.transform);
@@ -38,6 +38,9 @@ public class PlatformSpawner : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Generate new platform
+    /// </summary>
     private void SpawnPlatform()
     {
         GameObject nextPlatform = Instantiate(SelectPlatform(), new Vector3(UnityEngine.Random.Range(min_X, max_X),
@@ -46,6 +49,10 @@ public class PlatformSpawner : MonoBehaviour
         nextPlatform.transform.SetParent(this.transform);
     }
 
+    /// <summary>
+    /// Randomly select the next platform
+    /// </summary>
+    /// <returns> platform prefab </returns>
     private GameObject SelectPlatform()
     {
         spawnCount++;

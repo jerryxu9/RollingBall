@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public float moveSpeed = 2f;
-    public float boundY = 6f;
+    public float moveSpeed;
+    public float boundY;
 
-    void Start()
-    {
-        
-    }
-
-    protected virtual void Update()
+    protected void Update()
     {
         Move();
     }
@@ -23,4 +18,15 @@ public class Platform : MonoBehaviour
         if (this.transform.position.y >= boundY)
             this.gameObject.SetActive(false);
     }
+
+    protected virtual void OnCollisionEnter2D(Collision2D target)
+    {
+        if (target.gameObject.tag == "Player")
+        {
+            //SoundManager.instance.LandSound();
+        }
+    }
+
+    protected virtual void OnCollisionStay2D(Collision2D collision){}
+
 }

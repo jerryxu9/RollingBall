@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 421632535193036544}
   - component: {fileID: 421632535193036545}
   - component: {fileID: 5617018549058321127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Breakable Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,5 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d74d0613b1a4edfbde55bfc868fe5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 1.7
   boundY: 6

@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class SpeedPlatform : Platform
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool isLeft;
+
+    protected override void OnCollisionStay2D(Collision2D target)
     {
-        
+        if (target.gameObject.tag == "Player")
+        {
+            if (isLeft)
+            {
+                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(-1f);
+            }
+            else
+            {
+                target.gameObject.GetComponent<PlayerMovement>().PlatformMove(1f);
+            }
+        }
     }
 
-    
 }

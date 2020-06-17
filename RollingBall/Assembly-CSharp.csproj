@@ -64,12 +64,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Background\BackgroundScroll.cs" />
+    <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Platform\BreakablePlatform.cs" />
     <Compile Include="Assets\Scripts\Platform\Platform.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformSpawner.cs" />
     <Compile Include="Assets\Scripts\Platform\SpeedPlatform.cs" />
     <Compile Include="Assets\Scripts\Platform\SpikePlatform.cs" />
     <Compile Include="Assets\Scripts\Platform\StretchPlatform.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerBounds.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/jerry/Desktop/UnityGame/RollingBall/RollingBall/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
